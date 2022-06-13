@@ -1,0 +1,143 @@
+/* ### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins&family=Roboto+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 1;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+section {
+    background-color: hsl(249, 10%, 26%);
+    background-image: url("images/bg-intro-desktop.png");
+    /* margin: 100px; */
+}
+
+section .container {
+    padding: 120px 100px;
+}
+.container {
+    background-color:  hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    /* width: 100%;
+    height: 100vh; */
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+}
+
+.content {
+    /* color: white; */
+    padding: 130px 0px 0px 0px;
+    /* align-items: center; */
+    width: 500px;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    padding: 0px;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.form {
+    /* border: 1px solid; */
+    width: 500px;
+    height: 480px;
+    margin-left: 50px;
+}
+
+.trial {
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px 0px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 2px -2px gray;
+}
+.trial p {
+    font-size: 12px;
+    text-align: center;
+}
+.register {
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 30px;
+}
+
+.register div {
+    padding-top: 18px;
+}
+
+input {
+    color: black;
+    width: 100%;
+    padding: 6px 20px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: black;
+}
+
+#warning {
+    color: black;
+    font-size: 7px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+#warning span a {
+    color: red;
+    font-size: 8px;
+}
+
+button {
+    background-color: rgb(65, 189, 65);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        /* width: 100%; */
+    }
+}
