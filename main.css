@@ -3,7 +3,17 @@
 - Red: hsl(0, 100%, 74%) 
 - Green: hsl(154, 59%, 51%)
 
-### Accent
+
+/* <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd">
+        <circle fill="#FF7979" cx="12" cy="12" r="12" />
+        <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+        <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+      </g>
+    </svg> */
+
+
+/* ### Accent
 
 - Blue: hsl(248, 32%, 49%)
 
@@ -43,23 +53,17 @@ section {
 section .container {
     padding: 120px 100px;
 }
+.register div{
+    margin-block: 20px;
+}
 .container {
     background-color:  hsl(0, 100%, 74%);
     background-image: url("images/bg-intro-desktop.png");
-    /* width: 100%;
-    height: 100vh; */
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    display: flex;
+      display: flex;
 }
 
 .content {
-    /* color: white; */
     padding: 130px 0px 0px 0px;
-    /* align-items: center; */
     width: 500px;
 }
 
@@ -73,8 +77,19 @@ section .container {
     font-size: 16px;
 }
 
+img {
+  position: relative;  
+ float: right;
+ top: -32px;
+ right: 15px;
+ display: none;
+}
+
+img[aria-hidden="true"] {
+    display: block;
+}
+
 .form {
-    /* border: 1px solid; */
     width: 500px;
     height: 480px;
     margin-left: 50px;
@@ -98,9 +113,9 @@ section .container {
     padding: 15px 30px;
 }
 
-.register div {
+/* .register div {
     padding-top: 18px;
-}
+} */
 
 input {
     color: black;
@@ -127,7 +142,7 @@ input {
 }
 
 button {
-    background-color: rgb(65, 189, 65);
+    background-color: hsl(154, 59%, 51%);
     width: 100%;
     border-radius: 5px;
     padding: 10px 0;
@@ -136,8 +151,43 @@ button {
 }
 
 @media screen and (max-width: 375px) {
+
     .container {
-        display: flex;
+        display: grid;
+        grid-template-rows: 300px 500px;
+        /* flex-direction: row; */
         /* width: 100%; */
+        background-image: url("images/bg-intro-mobile.png");
+        padding-left: 0px;
+        width: 100%;
+    }
+    .trial{
+
+        margin-left: 0;
+    }
+    .content {
+        padding: 0px;
+        width: 100%;         
+    }
+    .content p {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .content h3 {
+        text-align: center;
+    }
+    section .container{
+    padding: 100px 50px 0px 0px ;
+    }
+
+    .form {
+        margin-left: 8%;
+        width: 100%;
+    }
+    .trial{
+        width: 85%;
+    }
+    .register{
+        width: 70%;
     }
 }

@@ -8,13 +8,6 @@
     <title>Document</title>
   </head>
   <body>
-    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fill-rule="evenodd">
-        <circle fill="#FF7979" cx="12" cy="12" r="12" />
-        <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
-        <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
-      </g>
-    </svg>
     <section>
       <div class="container">
         <div class="content">
@@ -30,12 +23,68 @@
             <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
           </div>
           <div class="register">
-            <form action="">
-              <div><input type="text" placeholder="First name" /></div>
-              <div><input type="text" placeholder="Last name" /></div>
-              <div><input type="email" placeholder="Email Address" /></div>
-              <div><input type="password" placeholder="Password" /></div>
-              <div><button type="submit">CLAIM YOUR FREE TRIAL</button></div>
+            <form action="" name="Form" id="form">
+              <div>
+                <input
+                  type="text"
+                  name="FirstName"
+                  id="firstName"
+                  placeholder="First name"
+                />
+                <img
+                  class="first"
+                  src="images/icon-error.svg"
+                  alt="error icon"
+                  aria-hidden="false"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="LastName"
+                  id="lastName"
+                  placeholder="Last name"
+                /><img
+                  class="last"
+                  src="images/icon-error.svg"
+                  aria-hidden="false"
+                  alt="error icon"
+                />
+              </div>
+
+              <div>
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <img
+                  class="email"
+                  src="images/icon-error.svg"
+                  aria-hidden="false"
+                  alt="error icon"
+                />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  name="Password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <img
+                  class="pass"
+                  src="images/icon-error.svg"
+                  aria-hidden="false"
+                  alt="error icon"
+                />
+              </div>
+              <div>
+                <button type="submit" onsubmit="formValidation()">
+                  CLAIM YOUR FREE TRIAL
+                </button>
+              </div>
               <p id="warning">
                 By clicking this button you are agreeing to our
                 <span><a href="">Terms and Services</a></span>
@@ -46,4 +95,5 @@
       </div>
     </section>
   </body>
+  <script src="main.js"></script>
 </html>
