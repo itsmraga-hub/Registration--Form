@@ -1,7 +1,9 @@
-let firstName = document.forms.form.FirstName.value
-let lastName = document.forms.form.LastName.value
-let email = document.forms.form.Email.value
-let password = document.forms.form.Password.value
+let firstName = document.forms.Form.FirstName.value
+let lastName = document.forms.Form.LastName.value
+let email = document.forms.Form.Email.value
+let password = document.forms.Form.Password.value
+
+
 
 
 form.addEventListener("submit", (e) => {
@@ -24,7 +26,6 @@ let formValidation = () => {
     if (firstName === "" || regName.test(firstName)) {
        boolfirst = boolf.setAttribute("aria-hidden", true);
     }
-
     if (lastName === "" || regName.test(lastName)) {
          boollast = booll.setAttribute("aria-hidden", true);
     }
